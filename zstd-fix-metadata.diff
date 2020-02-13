@@ -1,0 +1,19 @@
+--- zstd-0.5.1+zstd.1.4.4/Cargo.toml    2019-11-05T19:48:37+00:00
++++ zstd-0.5.1+zstd.1.4.4/Cargo.toml    2020-01-08T20:16:14.429503+00:00
+@@ -13,7 +13,7 @@
+ [package]
+ edition = "2018"
+ name = "zstd"
+-version = "0.5.1+zstd.1.4.4"
++version = "0.5.1"
+ authors = ["Alexandre Bury <alexandre.bury@gmail.com>"]
+ exclude = ["assets/**"]
+ description = "Binding for the zstd compression library."
+@@ -52,7 +52,6 @@
+ version = "2.2"
+ 
+ [features]
+-bindgen = ["zstd-safe/bindgen"]
+ default = ["legacy"]
+ legacy = ["zstd-safe/legacy"]
+ tokio = ["tokio-io", "futures"]
